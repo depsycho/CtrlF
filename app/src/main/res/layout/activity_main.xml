@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#871e3a"
+    android:orientation="horizontal"
+    tools:context="lt.vtvpmc.ems.ctrlf.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/quack" />
+        <Button
+            android:id="@+id/ButtonCopyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ems="14"
+            android:layout_below="@id/ImageView"
+            android:textColor="#000000"
+            android:text="paste text from clipboard"
+            android:textSize="@dimen/text_size"/>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ButtonCopyText"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/ButtonFindPhrase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:text="find phrase"
+                android:textSize="@dimen/text_size"/>
+
+            <Button
+                android:id="@+id/ButtonReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:text="reset"
+                android:textSize="@dimen/text_size"/>
+
+             </LinearLayout>
+
+        <TextView
+            android:id="@+id/TextViewFoundPhrase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ems="14"
+            android:text=""
+            android:textSize="@dimen/text_size"
+            android:layout_below="@id/LinearLayout"/>
+
+        <View
+            android:id="@+id/TextSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#a5a710"
+            android:layout_below="@id/TextViewFoundPhrase"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/TextViewCopiedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextSeparator"
+            android:layout_centerHorizontal="true"
+            android:ems="14"
+            android:paddingBottom="20dp"
+            android:hint="@string/pastedText"
+            android:textSize="@dimen/text_size"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</ScrollView>

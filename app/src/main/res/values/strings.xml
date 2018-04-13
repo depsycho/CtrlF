@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CtrlF</string>
+    <string name="inputSearchText">Input Search Text</string>
+    <string name="pastedText">Pasted Text</string>
+</resources>
